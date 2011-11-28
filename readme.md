@@ -1,4 +1,14 @@
-A little streaming echo server written for performance testing.
+A little notification server to help with two way http communication through a firewall.
+
+###Features
+* byte for byte retransmission to every connected client
+
+###Limitations
+* no support for picking up missed messages
+* no DoS protection, connections have no timeout
+
+###Notes
+The only web browser I know to work with this in real time is Firefox (tested with 8), currently all other browsers buffer responses until a set number of bytes is received or the response is terminated. While this server is not designed with web browsers in mind, it is the most convenient way to test the system.
 
 ***
 
